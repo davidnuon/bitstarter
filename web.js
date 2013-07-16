@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 	var bffr = fs.readFile(index.html);
-	var str = buf.toString(bffr);
+	var str = bffr.toString();
 	response.send(str);  
 });
 
